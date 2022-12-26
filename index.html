@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bs css -->
+    <link rel="stylesheet" href="bs/bootstrap.min.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="css_atlas/atlas_Css.css">
+    <title>Atlas</title>
+    <!-- axios script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- my script -->
+    <script defer type="module" src="js_atlas/app_atlas.js"></script>
+</head>
+
+<body>
+    <nav class="container-fluid bg-dark p-2">
+        <div class="container">
+            <div class="all_div">
+                <div class="logo">
+                    <h2 class=""><a href="index.html">My Atlas</a> </h2>
+                </div>
+                <div class="country_btn">
+                    <!-- data-heb="" give us the name val and use same class-->
+                    <!-- data-heb="All" class"btn_val" -->
+                    <button id="all_btn" class=" btn btn-danger">All</button>
+                    <button id="israel_btn" class="btn btn-info btn_val" data-heb="ISRAEL">ISRAEL</button>
+                    <button id="uk_btn" class="btn btn-warning btn_val" data-heb="UK">UK</button>
+                    <button id="france_btn" class="btn btn-info btn_val" data-heb="FRANCE">FRANCE</button>
+                    <button id="thailand_btn" class="btn btn-success btn_val" data-heb="THAILAND">THAILAND</button>
+                </div>
+                <div class="serach_div d-flex">
+                    <input id="search_input" placeholder="Search Country" class="form-control" type="text">
+                    <button id="search_btn" class="btn btn-success">Search</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <h2 class="text-center mt-2 text-danger display-3">List Of States</h2>
+        <div id="id_row" class="">
+            <!-- start box -->
+            <!-- <div id="div_inside" class="">
+                <div class="box_left mb-5">
+                    <img src="https://flagcdn.com/w320/mr.png" alt="">
+                    <h4>State: Israerl</h4>
+                    <div>populetion:1.2m</div>
+                    <div>regin:religus</div>
+                    <div>languge:hebrow</div>
+                    <div>coin:ILS</div>
+                    <div>capital:Jerusalem</div>
+                </div>
+                <div class="box_right mb-5 ms-5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7627473.653249188!2d-10.9510312!3d21.0185823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe80b8c314b3394f%3A0x83220bebd6be534e!2z157XkNeV16jXmdeY16DXmdeU!5e0!3m2!1siw!2sil!4v1670084099428!5m2!1siw!2sil"
+                        width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h4 class="display-6 text-center">Border with: <br>
+                        <p>Egyp</p>
+                    </h4>
+                </div>
+            </div> -->
+            <!-- end box -->
+        </div>
+    </main>
+</body>
+
+</html>

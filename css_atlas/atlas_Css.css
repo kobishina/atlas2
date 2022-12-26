@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: silver;
+    font-family: sans-serif;
+    background-image: url("../images/atlasBg2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+nav .container {
+    min-height: 80px;
+    /* border: 2px solid blue; */
+}
+
+nav h2 a {
+    text-decoration: none;
+    color: red;
+}
+
+nav .all_div {
+    min-height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+nav .country_btn button {
+    margin: 0 16px;
+    padding: 8px;
+    color: white;
+    transition: 1000ms;
+}
+
+nav .country_btn button:hover {
+    color: purple;
+    transform: scale(1.1);
+
+}
+
+
+
+main #id_row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+main .div_inside {
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 800px;
+}
+
+.iframe_map {
+    border-radius: 24px;
+    padding: 8px;
+}
+
+main div,
+h4 {
+    font-size: 1.2em;
+    color: black;
+}
+
+@media(max-width:768px) {
+    nav .all_div {
+        display: inline-block;
+    }
+
+    nav .country_btn button {
+        width: 50%;
+        margin-top: 16px;
+    }
+
+    main .box {
+        display: inline-block;
+    }
+
+    main .box_bottom {
+        display: inline-block;
+    }
+}
